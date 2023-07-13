@@ -69,3 +69,23 @@ if (itCompanies.includes(newCompany)){
  console.log("Company not Found");
 };
 //14
+let filteredCompanies = [];
+
+itCompanies.forEach(function(company) {
+  var oCount = 0;
+  
+  for (var i = 0; i < company.length; i++) {
+    if (company.charAt(i).toLowerCase() === 'o') {
+      oCount++;
+      if (oCount > 1) {
+        break;
+      }
+    }
+  }
+  
+  if (oCount <= 1) {
+    filteredCompanies.push(company);
+  }
+});
+
+console.log(filteredCompanies);
