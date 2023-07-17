@@ -89,3 +89,29 @@ itCompanies.forEach(function(company) {
 });
 
 console.log(filteredCompanies);
+//15 
+webTechs.sort();
+console.log(webTechs);
+//16
+webTechs.reverse();
+console.log(webTechs);
+//17
+console.log(itCompanies.slice(0,3));
+//18
+console.log(itCompanies.slice(itCompanies.length-3,itCompanies.length));
+//19
+console.log(itCompanies.slice(itCompanies.length/2 - 0.5,itCompanies.length/2 + 0.5));
+//20
+console.log(itCompanies.splice(0,1));// will return the spliced element
+console.log(itCompanies);//will return the altered array.
+//21
+itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle","Amazon"];
+itCompanies.splice(itCompanies.length/2 - 0.5,1)
+console.log(itCompanies);
+//22
+itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle","Amazon"];
+itCompanies.splice(itCompanies.length-1,1);
+console.log(itCompanies);
+//23
+itCompanies.splice(0,itCompanies.length);
+console.log(`the array is ${itCompanies}`);
